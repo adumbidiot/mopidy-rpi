@@ -9,4 +9,7 @@ RUN wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie
 RUN apt-get update
 RUN apt-get install mopidy
 
+EXPOSE 6600
+EXPOSE 6680
+
 CMD mopidy

@@ -8,6 +8,7 @@ RUN wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie
 
 RUN apt-get update
 RUN apt-get install mopidy python-pip
+RUN apt-get install cifs-utils
 RUN pip install Mopidy-Moped
 ADD ./mopidy.conf /root/.config/mopidy/mopidy.conf
 

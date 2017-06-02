@@ -15,4 +15,4 @@ ADD ./start.sh ./start.sh
 EXPOSE 6600
 EXPOSE 6680
 
-CMD start.sh
+CMD ./start.sh

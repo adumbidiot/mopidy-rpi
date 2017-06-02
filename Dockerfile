@@ -14,6 +14,8 @@ ADD ./mopidy.conf /root/.config/mopidy/mopidy.conf
 ADD ./start.sh ./start.sh
 RUN chmod +x ./start.sh
 
+RUN mkdir /music
+
 EXPOSE 6600
 EXPOSE 6680
 

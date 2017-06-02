@@ -10,8 +10,9 @@ RUN apt-get update
 RUN apt-get install mopidy python-pip
 RUN pip install Mopidy-Moped
 ADD ./mopidy.conf /root/.config/mopidy/mopidy.conf
+ADD ./start.sh ./start.sh
 
 EXPOSE 6600
 EXPOSE 6680
 
-CMD mopidy
+CMD start.sh
